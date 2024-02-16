@@ -15,41 +15,26 @@ class ModelSeeder extends Seeder
     {
         $models = [
             [
-                'title' => 'Стул',
-                // 'slug'=> 'stul',    
+                'title' => 'Стул - миндаль',
             ], 
             [
-                'title' => 'Полу-кресло',
-                // 'slug'=> 'polu-kreslo',    
+                'title' => 'Полукресло - сакура',   
             ], 
             [
-                'title' => 'Кресло',
-                // 'slug'=> 'kreslo',    
+                'title' => 'Кресло - приц',   
             ], 
             [
-                'title' => 'Прикроватный столик',
-                // 'slug'=> 'prikrovatnyy-stolik',    
+                'title' => 'Прикроватный столик - кайзен ',    
             ],
             [
-                'title' => 'Круглый стол',
-                // 'slug'=> 'kruglyy-stol',    
+                'title' => 'Стол круглый - белое солнце',    
             ],
             [
-                'title' => 'Детский стульчик',
-                // 'slug'=> 'detskiy-stulchik',    
+                'title' => 'Детский стульчик - ракета',   
             ],
             [
-                'title' => 'Детский столик',
-                // 'slug'=> 'detskiy-stolik',    
-            ],
-            [
-                'title' => 'Ковер',
-                // 'slug'=> 'kover',    
-            ],
-            [
-                'title' => 'Подставка для Алисы',
-                // 'slug'=> 'podstavka-dlya-alisy',    
-            ],
+                'title' => 'Детский столик - космос',   
+            ]
         ];
 
 
