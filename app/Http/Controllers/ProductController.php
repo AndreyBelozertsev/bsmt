@@ -17,7 +17,7 @@ class ProductController extends Controller
         return response()->streamDownload(
             function () use($product) {
                 echo QrCode::size(300)
-                    ->generate(route('product.show',['id' => $product->id]));
+                    ->generate(route('product.show',['id' => $product->id,'activated']));
             },
             "{$product->id}.svg",
             [
