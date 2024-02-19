@@ -31,7 +31,10 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $activated = false;
 
-        if($request->has('activated') && !$product->activated_at) {
+        if($request->has('activated') 
+            && !$product->activated_at 
+            && Carbon::parse($product->created_at)->addDays(2) < Carbon::now()
+        ) {
             $warranty = (isset($product->model->warranty) && $product->model->warranty) ? $product->model->warranty : 24;
             $product->activated_at = Carbon::now();
             $product->expaire_at = Carbon::now()->addMonths($warranty);
